@@ -1,5 +1,5 @@
 <?php
-$query->insert('users', [
+App::get('database')->insert('users', [
     'id' => null,
     'name' => $_POST['name']
 ]);
