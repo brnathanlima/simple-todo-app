@@ -1,2 +1,7 @@
 <?php
-var_dump($_REQUEST);
+$query->insert('users', [
+    'id' => null,
+    'name' => $_POST['name']
+]);
+
+header('Location: /practitioner');

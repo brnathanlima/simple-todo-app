@@ -1,4 +1,4 @@
 <?php
-$tasks = $query->selectAll('todos', 'Task');
+$users = $query->selectAll('users', 'User');
 
 require 'views/index.view.php';
