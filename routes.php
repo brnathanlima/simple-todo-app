@@ -1,6 +1,6 @@
 <?php
-$router->get('practitioner', 'controllers/index.php');
-$router->get('practitioner/about', 'controllers/about.php');
-$router->get('practitioner/about/culture', 'controllers/about-culture.php');
-$router->get('practitioner/contact', 'controllers/contact.php');
-$router->post('practitioner/names', 'controllers/add-name.php');
+$router->get('practitioner', 'PagesController@home');
+$router->get('practitioner/about', 'PagesController@about');
+$router->get('practitioner/contact', 'PagesController@contact');
+$router->get('practitioner/users', 'UsersController@index');
+$router->post('practitioner/users', 'UsersController@store');

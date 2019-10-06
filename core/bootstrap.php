@@ -10,3 +10,4 @@ App::bind('database', new QueryBuilder(
         )
     )
 );
+App::bind('helpers', require 'helpers.php');
